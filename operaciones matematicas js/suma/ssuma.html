@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <title>operaciones matematicas suma</title>
+</head>
+<body>
+    <h1>Operaciones Matematicas Suma + </h1>
+<label for="numero1">Numero 1</label>
+<input type="text" id="numero1" onchange="sumar();"><br>
+
+<label for="numero2">Numero 2</label>
+<input type="text" id="numero2" onchange="sumar();"><br>
+
+<label for="resultado">Resultado</label>
+<input type="text" id="resultado">
+
+<h6>juan pablo rubio ficha 2503816</h6>
+<h6>staroverflow</h6>
+
+<script>
+        function sumar(){
+        var numero1 = document.getElementById('numero1').value;
+        var numero2 = document.getElementById('numero2').value;
+
+        if(numero1!=='' && numero2!==''){
+            var suma = parseInt(numero1)+parseInt(numero2);
+            document.getElementById('resultado').value = suma;
+        }
+    }
+</script>
+</body>
+</html>
